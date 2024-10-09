@@ -1,0 +1,449 @@
+
+
+.edu-header {
+    min-height: 90px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+.col-flex-start {
+    align-items: flex-start;
+}
+.space-between-row {
+    justify-content: space-between;
+}
+.align-items-center-row {
+    align-items: center;
+}
+.align-items-center-column {
+    justify-content: center;
+}
+.w-100 {
+    width: 100%;
+}
+.mainmenu li {
+    color: #231f40;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 14px;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    transition: 0.3s;
+}
+.edu-header .header-menu-bar .quote-icon {
+    text-decoration: none;
+    background: #fff;
+    color: #525fe1;
+    line-height: 46px;
+    box-shadow: 2px 2px 4px #ccc;
+    height: 50px;
+    padding: 0 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    transition: 0.4s;
+}
+.mainmenu-nav .mainmenu li .mega-menu li {
+    margin: 0;
+    padding: 0;
+    height: unset;
+}
+.edu-header .mainmenu-nav ul li {
+    position: relative;
+}
+.edu-header .mainmenu-nav ul li:hover .mega-menu {
+    top: 90%;
+    z-index: 99999;
+}
+.mega-menu {
+    position: fixed;
+    top: 7.6rem;
+    z-index: 99999 !important;
+    overflow: auto;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: #0000001c 0px 0px 16px;
+    transition: all 0.3s;
+    font-family: "Urbanist", sans-serif;
+    max-height: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 4px solid #525fe1;
+    width: calc(100% - 64rem);
+}
+.mega-menu .course-hover {
+    /* background: #F2F8FB; */
+    min-width: 200px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    overflow-y: scroll;
+    white-space: nowrap;
+    background: #e6e6e6;
+}
+
+.mega-menu .course-hover::-webkit-scrollbar-thumb {
+    background-color: #a9a9a946 !important;
+    outline: 1px solid rgba(112, 128, 144, 0.089) !important;
+    border-radius: 5px !important;}
+
+    .mega-menu .course-hover::-webkit-scrollbar {
+        width: 0.2em;
+        height: 0.2em;
+    }
+
+.mega-menu .course-hover ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.mega-menu .course-hover ul li a {
+    padding: 7px 14px;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #8C8D9F;
+    font-family: '__Inter_aaf875';
+    color: black;
+    letter-spacing: 0.3px;
+}
+
+.mega-menu .course-hover ul li:hover a {
+    background: #ddd;
+    color: #525fe1;
+}
+
+
+
+.mega-menu .course-hover ul li.active a{
+    background: #F2F8FB;
+    /* color: #50515c; */
+    font-weight: 500;
+    /* border: 1px solid rgba(17, 121, 239, .4); */
+    box-shadow: -2px 3px 11px 0px rgba(0, 0, 0, .12);
+}
+.mega-menu .hover-results::-webkit-scrollbar-thumb {
+    background-color: #a9a9a946;
+    outline: 1px solid rgba(112, 128, 144, 0.089);
+    border-radius: 5px;
+}
+.mega-menu .hover-results::-webkit-scrollbar {
+    width: 0.1em;
+    height: 0.2em;
+}
+.mega-menu .hover-results {
+    padding: 10px;
+    min-width: 327.89999999999986px;
+    /* width: 509px; */
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: scroll;
+    grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+
+}
+.mega-menu .hover-results .course-card .cardlinks {
+    padding: 8px;
+    text-decoration: none;
+    color: #2E2B41;
+    gap: 5px !important;
+}
+
+.mega-menu .hover-results .course-card .cardlinks .courseIcon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 30%;
+    padding: 6px;
+}
+
+
+.mega-menu .hover-results .course-card .cardlinks h3 {
+    margin: 4px 0px 0px 0;
+}
+
+.mega-menu .hover-results .course-card .cardlinks h3:hover {
+    color: #525fe1;
+}
+
+.mega-menu .hover-results .course-card {
+    border-radius: 10px;
+    max-height: 170px;
+    width: 170px;
+    box-shadow: 3px 5px 19px -9px rgba(0, 0, 0, 0.3);
+}
+
+/* .mega-menu .hover-results .course-card:hover{
+    border-top: 5px solid #EAF8f6;
+    /* box-shadow: 0px 30px 40px -20px #AEACA3; */
+
+/* .mega-menu .hover-results .course-card:hover:nth-child(1),
+.mega-menu .hover-results .course-card:hover:nth-child(5) {
+    background: #EAF8F6;
+    box-shadow: none;
+}
+.mega-menu .hover-results .course-card:nth-child(1),
+.mega-menu .hover-results .course-card:nth-child(5) {
+    background: transparent;
+    border-top: 5px solid #EAF8f6;
+}
+.mega-menu .hover-results .course-card:hover:nth-child(2), 
+.mega-menu .hover-results .course-card:hover:nth-child(6) {
+    background: #FFF3EE;
+    box-shadow: none;
+    border-top: none;
+}
+.mega-menu .hover-results .course-card:nth-child(2), 
+.mega-menu .hover-results .course-card:nth-child(6) {
+    background: transparent;
+    border-top: 5px solid #FFF3EE;
+
+}
+.mega-menu .hover-results .course-card:hover:nth-child(3), 
+.mega-menu .hover-results .course-card:hover:nth-child(7) {
+    background: #FAEFFA;
+    box-shadow: none;
+    border-top: none;
+}
+.mega-menu .hover-results .course-card:nth-child(3), 
+.mega-menu .hover-results .course-card:nth-child(7) {
+    background: transparent;
+    border-top: 5px solid #FAEFFA;
+
+}
+
+.mega-menu .hover-results .course-card:hover:nth-child(4), 
+.mega-menu .hover-results .course-card:hover:nth-child(8) {
+    background: #EFF4FC;
+    box-shadow: none;
+    border-top: none;
+}
+.mega-menu .hover-results .course-card:nth-child(4), 
+.mega-menu .hover-results .course-card:nth-child(8) {
+    background: transparent;
+    border-top: 5px solid #EFF4FC;
+
+} */
+
+.mega-menu .hover-results .course-card .cardlinks h3 {
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #2E2B41;
+}
+.mega-menu .hover-results .course-card .details {
+    font-size: 13px;
+    /* font-weight: 500; */
+    color: black;
+    /* gap: 6px; */
+    display: flex;
+    flex-direction: row;
+}
+.mega-menu .hover-results .course-card .details .info {
+    position: relative;
+}
+.mega-menu .hover-results .course-card .details .info,
+.mega-menu .hover-results .course-card .details .time {
+    line-height: 15px;
+}
+#contentOne {
+    display: none;
+}
+* .mega-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.edu-header .space-between-row {
+    justify-content: space-between;
+}
+.edu-header .align-items-center-row {
+    align-items: center;
+}
+.edu-header .align-items-center-column {
+    justify-content: center;
+}
+.edu-header .inner-header {
+    min-height: 90px;
+}
+.mega-pop-menu {
+    display: none;
+}
+.mega-pop-menu .menu {
+    padding: 15px 20px;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+}
+.mega-pop-menu .menu li.men-list a {
+    padding: 8px 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+}
+.mega-pop-menu .menu li.men-list:hover {
+    color: blue;
+}
+.mega-pop-menu .menu li.men-list {
+    font-size: 16px;
+    line-height: 1.63;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #6f6b80;
+    font-weight: 500;
+}
+.course-link:nth-child(odd) {
+    background: #FFF3EE;
+}
+.course-link:nth-child(even) {
+    background: #FAEFFA;
+}
+.course-link {
+    padding: 3px 10px;
+    display: block;
+    font-size: 15px;
+    color: #231F40;
+}
+.mega-pop-menu .course-menu.active li.men-list .courses-button {
+    display: none;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.mega-pop-menu .course-menu.active li.men-list .courses-button.active {
+    display: flex;
+}
+.mega-pop-menu .course-menu.active li.men-list {
+    width: 100%;
+}
+.mega-pop-menu .course-menu.active .menu {
+    padding: 0 0 0 10px;
+}
+.mega-pop-menu .menu li + li {
+    border-top: 1px solid #eeeeee;
+}
+.mega-pop-menu .menu .course-menu + li.men-list {
+    border-top: 1px solid #eeeeee;
+}
+.mega-pop-menu .course-menu {
+    display: none;
+}
+.course-menu.active {
+    width: 100%;
+    border-top: 1px solid #eeeeee;
+    padding: 0px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and  (max-width:1241px) {
+    .mega-menu {
+        display: none;
+    }
+    header .mob-menu {
+        margin: 0 15px;
+    }
+    .mega-pop-menu {
+        display: flex;
+        position: fixed;
+        background: #fff;
+        top: 90px;
+        right: -300%;
+        z-index: 9999;
+        width: 100%;
+        max-width: 100%;
+        max-height: calc(100vh - 90px);
+        min-height: calc(100vh - 90px);
+        transition: all 0.8s ease;
+        overflow: auto;
+        border-top: 1px solid #eeeeee;
+    }
+    .mega-pop-menu.active {
+        right: 0;
+        
+    }
+    .d-flex-mob{
+        display: flex !important;
+    }
+}
+
+
+/* Apply alternating colors to ::before pseudo-element on different cards */
+.course-card:nth-child(1),
+.course-card:nth-child(5) {
+    --before-color: #EAF8F6; /* Purple */
+}
+
+.course-card:nth-child(2),
+.course-card:nth-child(6) {
+    --before-color: #FFF3EE; /* Red */
+}
+
+.course-card:nth-child(3),
+.course-card:nth-child(7) {
+    --before-color: #FAEFFA; /* Yellow */
+}
+
+.course-card:nth-child(4),
+.course-card:nth-child(8) {
+    --before-color: #EFF4FC; /* Green */
+}
+
+/* Hover effect */
+.course-card:hover {
+    color: #ffffff;
+}
+
+/* Card styling */
+.course-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    width: 400px; /* Adjust width as needed */
+    height: 180px; /* Adjust height as needed */
+    /* padding: 20px; */
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+    margin-right: 10px; /* Add some space between cards */
+}
+
+/* Pseudo-element styling */
+.course-card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: -10px;
+    height: 50px;
+    width: 26px;
+    border-radius: 32px;
+    background-color: var(--before-color);
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+/* Hover effect for pseudo-element */
+.course-card:hover::before {
+    transition-delay: 0.2s;
+    transform: scale(40);
+}
+
+
+

@@ -1,0 +1,143 @@
+.acc-section .accordion::-webkit-scrollbar-thumb {
+    background-color: #a9a9a946;
+    outline: 1px solid rgba(112, 128, 144, 0.089);
+    border-radius: 5px;
+}
+
+.acc-section .accordion::-webkit-scrollbar {
+    width: 0.1em;
+    height: 0.2em;
+}
+.acc-section .accordion {
+    overflow-y: scroll;
+    max-height: 374px;
+}
+.acc-section .accordion-item {
+    min-height: 74px;
+    /* background: linear-gradient(214deg, #DFFCFF, #CCDFFF); */
+    padding: 8px 24px;
+    font-family: 'Urbanist', sans-serif;
+    border: none;
+    border-radius: 18px;
+    Transition: 0.4s;
+}
+.acc-section .accordion-item .accordion-body{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0;
+}
+.acc-section .accordion-item .accordion-button:focus {
+    border: none;
+}
+.acc-section .accordion-item .accordion-button {
+    font-size: 20px;
+    border: 0 none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    padding: 13px 12px;
+    font-weight: 700;
+    line-height: 32px;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.edu-card .inner .acc-section .accordion-item .accordion-button::after {
+    background-image: url("../public/icon/dropIcon.svg");
+    scale: 2.2;
+    transition: all 0.5s;
+    transform: rotate(0deg);
+}
+.edu-card .inner .acc-section .accordion-item .accordion-toggle:checked + .accordion-title .accordion-button::after {
+    background-image: url("../public/icon/dropIcon.svg");
+    scale: 2.2;
+    transform: rotate(180deg) !important;
+}
+.edu-card .inner .acc-section .accordion-item .accordion-button{
+    box-shadow: none;
+}
+.edu-card .inner .acc-section .accordion-item .accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.connectus {
+    background: linear-gradient(214deg, #DFFCFF, #CCDFFF);
+}
+.edu-card .inner .acc-section .accordion-item:last-child {
+    margin-bottom: 0;
+}
+.connectus .hello-call {
+    /* margin-top: -20px; */
+    margin-bottom: -32px;
+}
+
+.connectus .fig{
+    height: auto;
+    width: auto;
+}
+.connectus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(214deg, #DFFCFF, #CCDFFF);
+    border-radius: 18px;
+    align-items: center;
+    padding: 36px 30px;
+}
+
+.connectus h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #231F40;
+    font-family: 'Urbanist', sans-serif;
+}
+.connectus span:last-child {
+    color: #197DC6;
+    font-size: 16px;
+    font-weight: 400;
+}
+.connectus p {
+    font-size: 22px;
+    color: #143DCE;
+    font-weight: 700;
+    margin-bottom: 10px !important;
+}
+.custom .accordion-item input[type="checkbox"] ~ label::before, .custom .accordion-item input[type="checkbox"]:checked ~ label::before, .custom .accordion-item input[type="checkbox"]:checked ~ label::after {
+    display: none;
+  }
+.custom .accordion-item .accordion-title {
+    padding-left: 0;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+}
+.custom .accordion-item .accordion-collapse {
+    /* visibility: hidden; */
+    display: none;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s linear;
+    overflow: hidden;
+}
+.custom .accordion-item .accordion-title.active +.accordion-collapse .accordion-body {
+    padding-top: 20px;
+}
+.custom .accordion-item .accordion-title.active +.accordion-collapse {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+} 
+@media (max-width: 767px) {
+    .acc-section .accordion-item .accordion-button {
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .acc-section .accordion-item .accordion-body {
+        font-size: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .acc-section .accordion-item {
+        min-height: 50px;
+    }
+}

@@ -1,0 +1,230 @@
+.about-hero-section .hero-subhead {
+    font-size: 19px;
+    line-height: 42px;
+    color: #525FE1;
+    font-weight: 700;
+}
+
+.about-hero-section .cta-button {
+    gap: 20px;
+    transition: all 0.6s;
+}
+.about-hero-section .cta-button .filled {
+    background: #525FE1;
+    color: #fff;
+    font-size: 18;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 6px 16px;
+    transition: all 0.6s;
+    border: 1px solid #525FE1;
+}
+.about-hero-section .cta-button .filled:hover {
+    background: #ffee0000;
+    color: #525FE1;
+    font-size: 18;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border: 1px solid #525FE1;
+}
+.about-hero-section .cta-button .outlined {
+    border: 1px solid #525FE1;
+    color: #525FE1;
+    background: #ffee0000;
+    font-size: 18;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 7px 16px;
+    transition: all 0.6s;
+    letter-spacing: 0.4px;
+}
+.about-hero-section .cta-button .outlined:hover {
+    border: 1px solid #525FE1;
+    color: #fff;
+    background: #525FE1;
+    font-size: 18;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 7px 16px;
+    letter-spacing: 0.4px;
+}
+.about-hero-section .hero-mainhead {
+    font-size: 56px;
+    line-height: 76px;
+    font-weight: 700;
+    color: #231F40;
+}
+
+.about-hero-section .herocta {
+    align-items: flex-start;
+    justify-content: center;
+}
+.about-hero-section .hero-row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.about-hero-section .heroinfographic .inner {
+    position: relative;
+}
+.about-hero-section .heroinfographic .inner .infoimg {
+    width: 279px;
+    height: 338px;
+}
+.about-hero-section .heroinfographic .inner .float-img .absoluteimg {
+    width: 112px;
+    height: 112px;
+}
+.about-hero-section .heroinfographic .inner .float-img {
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+.about-section .abt-img .badge-inner .badge-img {
+    animation: rotateIt 10s linear infinite;
+    border-radius: 100%;
+}
+@keyframes rotateIt {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.about-section .abt-img .badge-inner {
+    position: absolute;
+    top: 42px;
+    left: -75px;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 100%;
+}
+.about-section .abt-img .main-img {
+    border-radius: 5px;
+    width: 100%;
+}
+.about-section .abt-img .shape-image {
+    position: absolute;
+    bottom: -35px;
+    left: -35px;
+    z-index: -1;
+}
+.about-section .abt-img {
+    margin-right: 100px;
+    position: relative;
+}
+.about-section {
+    padding: 40px 0;
+}
+
+.about-section .shape-bottom {
+    right: 8px;
+    position: absolute;
+    right: 88px;
+    top: 379px;
+    animation: eduvibe-vsm-y-move 3.5s alternate infinite linear;
+}
+.about-section {
+    position: relative;
+}
+@keyframes eduvibe-vsm-y-move {
+    0% {
+    -webkit-transform: translate(0, -30%);
+    transform: translate(0, -30%);
+}
+
+100% {
+    -webkit-transform: translate(0, 30%);
+    transform: translate(0, 30%);
+}
+}
+.about-section .abt-text .description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 17px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-section .abt-text .description::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 2px;
+    height: 46px;
+    background: var(--color-primary);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about-section .abt-text .title-top .title {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-primary);
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+.about-hero-section .heroinfographic .cta-button {
+    display: none;
+}
+}
+@media (max-width: 768px) {
+    .about-hero-section .herocta {
+        align-items: center;
+        justify-content: center;
+    }
+    .about-section .shape-bottom {
+        display: none;
+    }
+    .about-section .abt-img .badge-inner {
+        display: none;
+    }
+    .about-section .abt-img {
+        margin-right: 0;
+    }
+    .about-hero-section .herocta .cta-button {
+        display: none;
+    }
+    .about-hero-section .heroinfographic {
+        margin-top: 8px;
+    }
+    .about-hero-section .cta-button {
+        margin-top: 25px;
+    }
+    .about-hero-section .heroinfographic .inner {
+        padding-left: 40px;
+    }
+    .about-hero-section .heroinfographic .inner .infoimg {
+        width: 235px;
+        height: 284px;
+    }
+    .about-hero-section .heroinfographic .inner .float-img {
+        position: absolute;
+        top: 0;
+        left: -18px;
+    }
+    .about-hero-section .heroinfographic .inner .float-img .absoluteimg {
+        width: 74px;
+        height: 74px;
+    }
+    .about-hero-section .hero-subhead {
+        font-size: 16px;
+        line-height: 16px;
+        color: #525FE1;
+        font-weight: 700;
+        text-align: center;
+    }
+    .about-hero-section .hero-mainhead {
+        font-size: 50px;
+        text-align: center;
+        line-height: 65px;
+        font-weight: 700;
+        color: #231F40;
+    }
+}

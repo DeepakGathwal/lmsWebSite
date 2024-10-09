@@ -1,0 +1,215 @@
+.hero-section .herofig .orbitfig {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 380px;
+    height: 380px;
+  }
+  .hero-section .herofig .orbitfig .centerlogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    border-radius: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #00000029 0px 0px 40px;
+  }
+  .hero-section .herofig .orbitfig .centerlogo .logo {
+    width: 90px;
+    height: auto;
+  }
+  .hero-section .herofig .orbitfig .first-orbit {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 190px;
+    width: 190px;
+    border-radius: 300px;
+    border: 1px solid #c7daff;
+  }
+  
+  .orbitfig .first-orbit .firstItem {
+    left: 7px;
+    top: 42px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .orbitfig .first-orbit .firstItem,
+  .orbitfig .first-orbit .secondItem,
+  .orbitfig .second-orbit .firstItem,
+  .orbitfig .second-orbit .secondItem,
+  .orbitfig .third-orbit .firstItem,
+  .orbitfig .third-orbit .secondItem {
+    position: absolute;
+    border-radius: 16px;
+    background: #26a4ff3b;
+  }
+  .orbitfig .first-orbit .firstItem::after,
+  .orbitfig .first-orbit .secondItem::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 16px;
+    background: #26a5ff;
+  }
+  .orbitfig .first-orbit .secondItem {
+    right: 7px;
+    top: 42px;
+    width: 10px;
+    height: 10px;
+  }
+  .orbitfig .first-orbit .thirdItem {
+    position: absolute;
+    bottom: -16px;
+    left: 37px;
+    border-radius: 16px;
+  }
+  .orbitfig .second-orbit {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    height: 260px;
+    width: 260px;
+    border-radius: 300px;
+    border: 1px solid #c7daff;
+  }
+  .orbitfig .second-orbit .firstItem::after,
+  .orbitfig .second-orbit .secondItem::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 16px;
+    background: #26a5ff;
+  }
+  .orbitfig .second-orbit .firstItem {
+    width: 16px;
+    height: 16px;
+    top: 155px;
+    left: -4px;
+  }
+  .orbitfig .second-orbit .secondItem {
+    width: 16px;
+    height: 16px;
+    top: 14px;
+    right: 49.2px;
+  }
+  .orbitfig .second-orbit .thirdItem {
+    position: absolute;
+    left: 17px;
+    top: -8px;
+  }
+  .orbitfig .second-orbit .fourthItem {
+    position: absolute;
+    right: 17px;
+    bottom: -8px;
+  }
+  .orbitfig .second-orbit .mid-icon {
+    height: 68px;
+    width: 68px;
+  }
+  .orbitfig .third-orbit {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    border-radius: 300px;
+    border: 1px solid #c7daff;
+  }
+  .orbitfig .third-orbit .firstItem {
+    left: -11px;
+    top: 122px;
+    width: 28px;
+    height: 28px;
+  }
+  .orbitfig .third-orbit .firstItem::after, 
+  .orbitfig .third-orbit .secondItem::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    background: #26a5ff;
+  }
+  .orbitfig .third-orbit .secondItem {
+      right: 59.4px;
+      bottom: 19.6px;
+      width: 28px;
+      height: 28px;
+  }
+  .orbitfig .third-orbit .thirdItem {
+      position: absolute;
+      top: -40px;
+      left: 119px;
+  }
+  .orbitfig .third-orbit .fourthItem {
+      position: absolute;
+      bottom: -5px;
+      left: 37px;
+  }
+  .orbitfig .third-orbit .fifthItem {
+      position: absolute;
+      top: 102px;
+      right: -26px;
+  }
+  .orbitfig .second-orbit .large-icon {
+      height: 90px;
+      width: 90px;
+    }
+
+    @keyframes rotateOrbit {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+  .first-orbit {
+    animation: rotateOrbit 15s linear infinite; 
+}
+
+.second-orbit {
+    animation: rotateOrbit 20s linear infinite; 
+}
+
+.third-orbit {
+    animation: rotateOrbit 30s linear infinite; 
+}
+
+@keyframes rotateInnerImage {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+
+.first-orbit .thirdItem img,
+.second-orbit .thirdItem img,
+.second-orbit .fourthItem img,
+.third-orbit .thirdItem img,
+.third-orbit .fourthItem img,
+.third-orbit .fifthItem img {
+    animation: rotateInnerImage 30s linear infinite; 
+}
